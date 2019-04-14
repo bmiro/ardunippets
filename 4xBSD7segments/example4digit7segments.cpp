@@ -229,7 +229,7 @@ void simple_example() {
     digitalWrite(D2, HIGH);
     digitalWrite(D3, HIGH);
     digitalWrite(D4, LOW);
-    
+
                digitalWrite(pinA, LOW);
     /***********************/   /***********************/
     /***********************/   /***********************/
@@ -253,7 +253,6 @@ void display_int(int number) {
     int digit_value;
 
     int digit_count = floor(log10(number)) + 1;
-
 
     for (int digit = 0; digit < digit_count; digit++) {
         digit_value = (int)(number / pow(10, digit)) % 10;
